@@ -1,0 +1,49 @@
+body {
+    background-color: #A99A8580;
+    background-image: url('./img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+}
+
+.container {
+    background-color: #A99A8540;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #9A9FA3;
+    border: 1px double black;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+#volumeInput , #lengthInput  , #weightInput {
+    border-color: #A99A8540;
+}
+
+
+
+#volumeInput:focus , #lengthInput:focus , #weightInput:focus  {
+    box-shadow: 0 0 0 0.25rem #A99A8590;
+    border-color: #A99A8540;
+}
+
+#resultVolume , #resultLength , #resultWeight , p {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+

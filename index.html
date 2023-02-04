@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Mértékegység átváltó</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="col-12 text-center my-2">Mértékegység átváltó</h1>
+                <div class="col-10 col-sm-8 col-md-7 col-lg-5 col-xxl-3 mt-3 mx-auto section">
+                    <h2 class="col-12  my-2">Térfogat</h2>
+                    <label> Átváltandó érték: </label>
+                    <input class= "form form-control form-control-sm mb-2" type="number" id="volumeInput">
+                    
+                    <select class="col-12 mb-2" id="volumeSelector1">
+                        <option value="liter">Liter</option>
+                        <option value="mililiter">Milliliter</option>
+                        <option value="gallon">Gallon (Brit gal)</option>
+                        <option value="pint">Pint (pt)</option>
+                    </select>
+                    <label>Átváltás a következőre:</label>
+                    <select class="col-12 mb-2" id="volumeSelector2">
+                        <option value="liter">Liter</option>
+                        <option value="mililiter"  >Milliliter</option>
+                        <option value="gallon" >Gallon (Brit gal)</option>
+                        <option value="pint" >Pint (pt)</option>
+                    </select>
+                    <p>Átváltás eredménye:</p>
+                    <div id="resultVolume"> 
+                    </div>
+                </div>
+                <div class="col-10 col-sm-8 col-md-7 col-lg-5 col-xxl-3 mt-3 mx-auto section">
+                    <h2 class="col-12  my-2">Hosszúság</h2>
+                    <label> Átváltandó érték: </label>
+                    <input class= "form form-control form-control-sm mb-2" type="number" id="lengthInput">
+                    
+                    <select class="col-12 mb-2" id="lengthSelector1">
+                        <option value="kilometer">Kilométer</option>
+                        <option value="meter">Méter</option>
+                        <option value="decimeter">Deciméter</option>
+                        <option value="centimeter">Centiméter</option>
+                    </select>
+                    <label>Átváltás a következőre:</label>
+                    <select class="col-12 mb-2" id="lengthSelector2">
+                        <option value="kilometer">Kilométer</option>
+                        <option value="meter">Méter</option>
+                        <option value="decimeter">Deciméter</option>
+                        <option value="centimeter">Centiméter</option>
+                    </select>
+                    <p>Átváltás eredménye:</p>
+                    <div id="resultLength">
+                        
+                    </div>
+                </div>
+                <div class="col-10 col-sm-8 col-md-7 col-lg-5 col-xxl-3 mt-3 mx-auto section">
+                    <h2 class="col-12  my-2">Tömeg</h2>
+                    <label> Átváltandó érték: </label>
+                    <input class= "form form-control form-control-sm mb-2" type="number" id="weightInput">
+                    
+                    <select class="col-12 mb-2" id="weightSelector1">
+                        <option value="kilogramm">Kilogramm</option>
+                        <option value="gramm">Gramm</option>
+                        <option value="centigramm">Centigramm</option>
+                        <option value="milligramm">Milligramm</option>
+                    </select>
+                    <label>Átváltás a következőre:</label>
+                    <select class="col-12 my-2" id="weightSelector2">
+                        <option value="kilogramm" >Kilogramm</option>
+                        <option value="gramm">Gramm</option>
+                        <option value="centigramm">Centigramm</option>
+                        <option value="milligramm">Milligramm</option>
+                    </select>
+                    <p>Átváltás eredménye:</p>
+                    <div id=resultWeight></div>
+                </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
